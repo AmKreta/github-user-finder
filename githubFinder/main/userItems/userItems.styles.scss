@@ -1,0 +1,45 @@
+.user {
+    height: 25vh;
+    width: 25vw;
+    margin: 1vw;
+    background-color:#1ba098;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &:hover{
+       opacity:.8;
+    }
+
+    .avatar {
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+    }
+
+    .userName{
+        color:white;
+    }
+
+    .userDetail{
+        background:red;
+        .followingFollowers{
+            background:yellow;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .user{
+        height:40vh;
+        width:48vw;
+        flex-direction:column;
+        .avatar{
+            height:25vh;
+            width:25vh;
+            border-radius:0px;
+        }
+    }
+}
